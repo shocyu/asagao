@@ -17,6 +17,10 @@
     </div>
     
     <div id = "content">
+      <% if flash.notice %>
+      <p class = "notice"><%= flash.notice %></p>
+      <% end %>
+      
       <%= yield %>
     </div>
     
@@ -24,9 +28,11 @@
       <%= render "shared/sidebar" %>
     </div>
     
-    <div id = "footer">
-      <%= render "shared/footer" %>
-    </div>
+    <div class = "clear">
+      <div id = "footer">
+        <%= render "shared/footer" %>
+      </div>
+    <hr/></div>
     
   </div>
 </body>

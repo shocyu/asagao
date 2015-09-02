@@ -13,7 +13,21 @@
  *= require_tree .
  *= require_self
  */
-
+ 
+ /*ページ全体*/
+ body{
+     background-color: white;
+     color: black;
+     margin: 0; padding: 0;
+     font-family: meiryo, sans-serif;
+ }
+ 
+ /*リンク*/
+ a:link {color: #00c;}
+ a:visited {color: #00c;}
+ a:hover {color: #ccf;}
+ a:img {border: none;}
+ 
 /*全体の枠*/
 div#container {
     margin: 0 auto;
@@ -36,6 +50,10 @@ div#sidebar {
     padding: 5px;
     font-size: 86%;
 }
+
+
+div.clear { clear: both; }
+div.clear hr { display: none; } 
 
 /*メニューバーのリンク*/
 div.menubar a { text-decoration: none; }
